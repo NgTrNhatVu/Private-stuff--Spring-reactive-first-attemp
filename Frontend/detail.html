@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product detail</title>
+</head>
+
+<body onload="getProductDetail()">
+    <div class="container">
+        <header>
+            <div class="logo"><a href="#">Logo</a></div>
+            <div class="banner"><a href="#">Nulla nec viverra quam</a></div>
+            <div class="search-box">
+
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Customer</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <div class="main-content">
+                <div id="pro-detail">
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mẫu HTML dùng cho một ô chứa thông tin sản phẩm -->
+    <script id="productCell" type="text/html">
+        <h3>{NAME}</h3>
+        <hr>
+        <div id="left-section">
+            <img src="C:\Users\pc\Desktop\ProductFrontend\img\art.jpg" alt="product-image">
+        </div>
+        <div id="right-section">
+            <p id="price-line">Price: <span id="price">${PRICE}</span></p>
+            <div id="status-line">Status: <span id="status">{STATUS}</span></div>
+        </div>
+        
+    </script>
+
+    <script type="text/javascript" src="js/product.js"></script>
+</body>
+
+</html>

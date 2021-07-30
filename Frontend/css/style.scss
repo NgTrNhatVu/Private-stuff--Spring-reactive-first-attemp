@@ -1,0 +1,209 @@
+
+//=============== Color variables =============
+
+$color-1: #e8ffe8;
+$color-2: ;
+$color-3: #74f9ff;
+$color-4: #00e0ff;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+//============== ? ===================
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+//=================== HEADER =====================
+header{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    background-color: $color-2;
+    padding: 10px 0px;
+}
+
+.logo{
+    min-width : 20%;
+    text-align: center;
+}
+
+.banner{
+    flex: 1;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+//===================== THÂN TRANG =======================
+main{
+    width: 100%;
+    margin: auto 0px;
+    display: flex;
+}
+
+//================= MENU =================
+nav{
+    min-height: 10vh;
+    min-width: 15%;
+    background-color: white;
+    ul{
+        list-style-type: none;
+        width: 100%;
+        background-color: $color-3;
+    }
+    li{
+        display: inline-table;
+        padding: 10px 20px;
+    }
+    
+    select{
+        padding: 5px 0px;
+        margin-left: 30px;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+//===============   CONTENT =================
+.main-content{
+    height: 100%;
+    flex: 1;
+    padding: 10px;
+    h2{
+        text-align: center;
+        margin: 0px auto;
+    }
+}
+
+.search-box{
+    display: inline;
+    width: 100px;
+    text-align: center;
+    form{
+        display: inline;
+        width: 50px;
+    }
+    input[type]{
+        border-radius: 20px;
+        padding: 5px 10px;
+        border: solid 0.5px;
+        &:focus{
+            outline:none;
+        }
+    }
+    button{
+        border-radius: 20px;
+        padding: 5px 15px;
+        border: none;
+        background-color: $color-4;
+    }
+
+}
+
+.add-new{
+    display: inline;
+    padding: 5px 10px;
+    background-color: $color-4;
+    border: none;
+    border-radius: 20px;
+}
+
+#product-list{
+    margin: 5px auto;
+    list-style-type: none;
+    li{
+        display: inline-table;
+        width: 200px;
+        min-height: 100px;
+        background-color: rgb(240, 248, 248);
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        .name{
+            width: 200px;
+            height: 30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .price{
+            color: green;
+        }
+
+        .update-icon{
+            text-align: right;
+            padding: 10px;
+        }
+    }
+}
+
+.new-product-table{
+    margin: 10px auto;
+    border: 0.2px solid $color-4;
+    padding: 10px;
+    td{
+        padding: 5px 10px;
+    }
+    button{
+        margin: 0 auto;
+        width: 100%;
+        padding: 5px 10px;
+        background-color: $color-4;
+        border: none;
+        &:hover{
+            background-color: $color-3;
+        }
+    }
+    input[type]{
+        padding: 5px;
+    }
+}
+
+#pro-detail{
+    margin: 0 auto;
+    width: max-content;
+    height: 80vh;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: $color-1;
+    h3{
+        margin: 10px 0px
+    }
+    #left-section{
+        display: inline;
+        float: left;
+        margin: 20px 50px 0px 20px;
+    }
+    #right-section{
+        display: inline;
+        float: right;
+        margin: 20px 30px;
+    }
+    img{
+        width: 200px;
+    }
+    #price-line{
+        padding: 5px 0px;
+    }
+    #price{
+        color: green;
+    }
+    #status-line{
+        padding: 5px 0px;
+    }
+    #status{
+    }
+}

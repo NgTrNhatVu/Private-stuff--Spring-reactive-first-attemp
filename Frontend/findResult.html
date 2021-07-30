@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>All product</title>
+</head>
+
+<body onload="getProductByName()">
+    <div class="container">
+        <header>
+            <div class="logo"><a href="#">Logo</a></div>
+            <div class="banner"><a href="#">"Khẩu hiệu các thứ các thứ"</a></div>
+            <div class="search-box">
+                <form action="findResult.html" method="GET">
+                    <input type="text" name="name"/>
+                    <button type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Customer</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <div class="main-content">
+                <h3>All product</h3>
+                <ul id="product-list">
+                    <!-- Sẽ thêm các ô sản phẩm bằng JS sau khi đọc từ JSON -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mẫu HTML dùng cho một ô chứa thông tin sản phẩm -->
+    <script id="productCell" type="text/html">
+        <div class="name"><a href="detail.html?id={Id}">{NAME}</a></div>
+        <div class="price">${PRICE}</div>
+    </script>
+
+    <script type="text/javascript" src="js/product.js"></script>
+</body>
+
+</html>
